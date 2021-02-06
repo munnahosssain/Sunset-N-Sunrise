@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+@keyframes slidein{
+    0%{
+        left: 0;
+        top: 0;
+        background-color: #e2e250;
+    }
+    50%{
+        left: 47%;
+        top: 296px;
+        background-color: #a73737;
+    }
+    100%{
+        left: 95%;
+        top: 0;
+        background-color: #e2e250;
+    }
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e2e250;
+    position: absolute;
+}
+.stage{
+        height: 400px;
+        min-width: 800px;
+        background-color: #0a536b;
+}
+.stage:hover .ball{
+    animation: slidein 4s ease-in-out 1s infinite alternate;
+}
